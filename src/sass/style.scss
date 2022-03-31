@@ -9,3 +9,11 @@
     box-sizing: border-box;
     font-family: 'Graphik';
 }
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+@import 'blocks/title';
+@import 'blocks/header';

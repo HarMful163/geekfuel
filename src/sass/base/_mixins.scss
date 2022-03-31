@@ -1,0 +1,20 @@
+@mixin plus {
+    &::after {
+        content: '';
+        position: absolute;
+        top: 6.5px;
+        left: 73px;
+        width: 10px;
+        height: 2px;
+        background-color: $black-color;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 2.5px;
+        left: 77px;
+        width: 2px;
+        height: 10px;
+        background-color: $black-color;
+    }
+}
