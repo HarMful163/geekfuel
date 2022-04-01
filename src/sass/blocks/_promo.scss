@@ -1,0 +1,43 @@
+.promo {
+    position: relative;
+    min-height: 600px;
+    padding: 100px 0 100px 231px;
+    background-color: $main-color;
+    &__info {
+        &-title {
+            color: $white-color;
+            max-width: 322px;
+            font-family: 'FF DIN';
+            font-weight: 700;
+        }
+        &-text {
+            margin-top: 30px;
+            color: $white-color;
+            font-weight: 400;
+            max-width: 378px;
+            line-height: 26px;
+        }
+        &-btn {
+            background-color: white;
+            margin-top: 50px;
+            color: $black-color;
+            width: 160px;
+        }
+    }
+    &__bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        img {
+            width: 100%;
+        }
+    }
+    &__shirt {
+        position: absolute;
+        top: 0;
+        right: 0;
+        img {
+            width: 100%;
+        }
+    }
+}
