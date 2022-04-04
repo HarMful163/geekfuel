@@ -1,0 +1,83 @@
+@media (max-width: 1439px) {
+    .header {
+        padding: 0 60px;
+        &__logo {
+            padding-right: 0;
+        }
+    }
+    .promo {
+        background: $main-color url('../../icons/promo/promo_bg.png') no-repeat 120% 0/auto 100%;
+        height: auto;
+        &__info-title {
+            margin-top: 40px;
+            font-size: 80px;
+            line-height: 80px;
+        }
+        &__info-text {
+            margin-top: 15px;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &__info-btn {
+            margin: 40px 0 40px 0;
+        }
+        &__pictures {
+            width: 680px;
+            &-shirts {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 0 20px;
+        &__menu {
+            width: 350px;
+        }
+        &__panel {
+            width: 200px;
+        }
+    }
+    .promo {
+        background: $main-color url('../../icons/promo/promo_bg.png') no-repeat 120% 0/auto 120%;;
+        height: auto;
+        &__info-title {
+            margin-top: 30px;
+            max-width: 200px;
+            font-size: 60px;
+            line-height: 91%;
+        }
+        &__info-text {
+            max-width: 290px;
+            margin-top: 15px;
+            font-size: 14px;
+            line-height: 16px;
+        }
+        &__info-btn {
+            margin: 30px 0 30px 0;
+        }
+        &__pictures {
+            &-shirts {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 992px) {
+
+}
+
+
+@media (max-width: 768px) {
+
+}
+
+
+@media (max-width: 576px) {
+
+}

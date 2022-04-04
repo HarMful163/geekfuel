@@ -1,10 +1,14 @@
 .promo {
+    background: $main-color url('../../icons/promo/promo_bg.png') no-repeat 100% 0;
     position: relative;
-    min-height: 600px;
-    padding: 100px 0 100px 231px;
-    background-color: $main-color;
+    height: 600px;
+    padding: 0 0 0 12%;
+    display: flex;
+    justify-content: space-between;
     &__info {
+        z-index: 1;
         &-title {
+            margin-top: 100px;
             color: $white-color;
             max-width: 322px;
             font-family: 'FF DIN';
@@ -24,20 +28,13 @@
             width: 160px;
         }
     }
-    &__bg {
-        position: absolute;
-        top: 0;
-        right: 0;
-        img {
-            width: 100%;
-        }
-    }
-    &__shirt {
-        position: absolute;
-        top: 0;
-        right: 0;
-        img {
-            width: 100%;
+    &__pictures {
+        position: relative;
+        padding-top: 20px;
+        &-shirts {
+            position: absolute;
+            bottom: 0;
+            right: 0;
         }
     }
 }
