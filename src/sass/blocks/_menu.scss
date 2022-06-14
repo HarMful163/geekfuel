@@ -1,0 +1,101 @@
+.menu {
+    height: calc(100vh - 100px);
+    display: flex;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    &__item {
+        position: relative;
+        padding: 30px 20px;
+        font-weight: 500;
+        div {
+            @include menuUnderLine;
+        }
+        a {
+            color: $black-color;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        @include arrowRight;
+        &:last-child {
+            ::after {
+                display: none;
+            }
+        }
+    }
+    &__login {
+        font-weight: 500;
+        text-align: center;
+        position: relative;
+        a {
+            color: $black-color;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        @include menuUnderLineLong;
+        &::after {
+            top: -29px;
+        }
+    }
+}
+.teeClub {
+    display: none;
+    position: relative;
+    font-weight: 500;
+    &-header {
+        background-color: $white-color;
+        height: 76px;
+        width: 100%;
+        padding: 30px 0 0 42px;
+    }
+    div {
+        &::after {
+            width: calc(88% + 12px);
+            left: 12px;
+        }
+    }
+    a {
+        color: $black-color;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    @include arrowLeft;
+}
+
+.shop {
+    display: none;
+    position: relative;
+    font-weight: 500;
+    &-header {
+        background-color: $white-color;
+        height: 76px;
+        width: 100%;
+        padding: 30px 0 0 42px;
+        &::after {
+            width: calc(88% + 12px);
+            left: 12px;
+        }
+        a {
+            color: $black-color;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+    @include arrowLeft;
+    &-wrapper {
+        padding: 30px 0 0 20px;
+        li {
+            list-style-type: none;
+            margin-top: 40px;
+            &:first-child {
+                margin: 0;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: $black-color;
+            font-weight: 400;
+            text-transform: capitalize;
+        }
+    }
+}

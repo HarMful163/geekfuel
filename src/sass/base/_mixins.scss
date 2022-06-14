@@ -18,3 +18,72 @@
         background-color: $black-color;
     }
 }
+
+@mixin menuUnderLineLong {
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: #E0E1E2;;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+@mixin menuUnderLine {
+    &::after {
+        content: '';
+        position: absolute;
+        width: 88%;
+        height: 1px;
+        background-color: #E0E1E2;;
+        bottom: 0;
+        left: 20px;
+    }
+}
+
+@mixin arrowRight {
+    &::before {
+        content: '';
+        position: absolute;
+        width: 7px;
+        height: 1px;
+        background-color: $black-color;
+        right: 20px;
+        transform: rotate(45deg);
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 7px;
+        background-color: $black-color;
+        top: 31.5px;
+        right: 23px;
+        transform: rotate(45deg);
+    }
+}
+
+@mixin arrowLeft {
+    &::before {
+        content: '';
+        position: absolute;
+        width: 7px;
+        height: 1px;
+        background-color: $black-color;
+        left: 20px;
+        top: 33px;
+        transform: rotate(-45deg);
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 7px;
+        background-color: $black-color;
+        top: 34.5px;
+        left: 23px;
+        transform: rotate(-45deg);
+    }
+}

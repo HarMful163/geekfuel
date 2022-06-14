@@ -1,7 +1,7 @@
 .promo {
-    background: $main-color url('../../icons/promo/promo_bg.png') no-repeat 100% 0;
+    background: $main-color url('../../img/promo/promo_bg.png') no-repeat 100% 0;
     position: relative;
-    height: 600px;
+    min-height: 600px;
     padding: 0 0 0 12%;
     display: flex;
     justify-content: space-between;
