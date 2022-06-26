@@ -87,3 +87,16 @@
         transform: rotate(-45deg);
     }
 }
+
+@mixin checkMark {
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 24px;
+        height: 24px;
+        transform: -45deg;
+        left: 0;
+        background: url('../../icons/reasons/checkMark.svg');
+    }
+}

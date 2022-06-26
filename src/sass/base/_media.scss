@@ -1,4 +1,7 @@
 @media (max-width: 1439px) {
+    .container {
+        width: 100%;
+    }
     .header {
         padding: 0 60px;
         &__logo {
@@ -19,6 +22,9 @@
                 width: 120%;
             }
         }
+    }
+    .offer {
+        padding-left: 3%;
     }
 }
 
@@ -49,6 +55,11 @@
         }
         &__info-btn {
             margin: 30px 0 30px 0;
+        }
+    }
+    .offer {
+        &__title {
+            margin: auto auto;
         }
     }
 }
@@ -126,6 +137,15 @@
             }
         }
     }
+    .offer {
+        padding-top: 70px;
+        &__title {
+            font-size: 55px;
+        }
+        &__item {
+            font-size: 14px;
+        }
+    }
 }
 
 
@@ -171,6 +191,22 @@
             &-shirts {
                 height: 115%;
             }
+        }
+    }
+    .offer {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__title {
+            margin: 0 auto;
+            font-size: 42px;
+        }
+        &__list {
+            margin-top: 30px;
+            max-width: 100%;
+        }
+        &__item {
+            width: 100%;
         }
     }
 }
@@ -239,11 +275,24 @@
             }
         }
         &__pictures {
-            height: 240px;
             &-shirts {
+                width: 110%;
                 height: 100%;
-                width: 105%;
             }
+        }
+    }
+    .offer {
+        padding: 70px 0;
+        &__title {
+            padding: 0 20px;
+            font-size: 36px;
+            line-height: 91%;
+        }
+        &__list {
+            margin: 30px 20px 0 20px;
+        }
+        &__item {
+            padding-right: 0;
         }
     }
 }
