@@ -21,6 +21,7 @@
     &_fz18 {
         font-size: 18px;
         line-height: 20px;
+        font-weight: 400;
     }
     &_fz20 {
         font-size: 20px;
@@ -45,10 +46,12 @@
     &_fz60 {
         font-size: 60px;
         font-weight: 700;
+        font-family: 'FF DIN';
     }
     &_fz100 {
         font-size: 100px;
         line-height: 91px;
         font-weight: 700;
+        font-family: 'FF DIN';
     }
 }

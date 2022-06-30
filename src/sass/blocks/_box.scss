@@ -1,0 +1,36 @@
+.box {
+    margin: 115px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 85px 74px;
+    }
+    &__list {
+        margin-top: 50px;
+    }
+    &__item {
+        display: flex;
+        list-style-type: none;
+        line-height: 26px;
+        width: 481px;
+        margin-top: 20px;
+        :first-child {
+            margin-top: 0;
+        }
+        img {
+            margin-right: 24px;
+        }
+    }
+    &__collection {
+        margin-left: 104px;
+        display: grid;
+        grid-template-columns: repeat(3, 149px);
+        grid-template-rows: 149px 149px;
+        gap: 20px;
+    }
+    &__img {
+        &-up {
+            margin-top: 47px;
+        }
+    }
+}
