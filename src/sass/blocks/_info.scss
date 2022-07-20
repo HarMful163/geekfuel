@@ -1,0 +1,19 @@
+.info {
+    padding: 50px 65px 80px 65px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 20.49%;
+        margin: 0 auto;
+        margin-right: 30px;
+    }
+    &__img {
+        margin-top: 30px;
+    }
+    &__text {
+        margin-top: 30px;
+        width: 100%;
+    }
+}

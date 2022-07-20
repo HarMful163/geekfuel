@@ -1,6 +1,7 @@
 @media (max-width: 1439px) {
     .container {
         width: 100%;
+        padding: 0 40px;
     }
     .header {
         padding: 0 60px;
@@ -23,13 +24,16 @@
             }
         }
     }
-    .offer {
-        padding-left: 3%;
-    }
-    .geek {
-        &__wrapper {
-            padding: 0 40px;
+    .box {
+        &__text {
+            padding-right: 40px;
         }
+    }
+    .gallery {
+        display: none;
+    }
+    .info {
+        padding: 50px 25px 80px 25px;
     }
 }
 
@@ -70,13 +74,18 @@
     .box {
         padding-top: 107px;
         &__wrapper {
-            padding-left: 40px;
+            padding-left: 0px;
         }
         &__item {
             width: 400px;
         }
-        &__collection {
-            margin-left: 50px;
+    }
+    .info {
+        &__item {
+            width: 23%;
+        }
+        &__text {
+            font-size: 14px;
         }
     }
 }
@@ -172,6 +181,7 @@
             text-align: center;
         }
         &__text {
+            padding-right: 0px;
             margin: 0 auto;
         }
         &__item {
@@ -204,6 +214,17 @@
         &__descr {
             text-align: center;;
             margin-top: 10%;
+        }
+    }
+    .info {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__item {
+            width: 33%;
+        }
+        &__text {
+            font-size: 14px;
         }
     }
     
@@ -426,6 +447,17 @@
         &__descr {
             font-size: 14px;
             line-height: 21px;
+        }
+    }
+    .info {
+        padding: 0 0 80px 0;
+        &__item {
+            width: 46%;
+            margin: 0;
+            margin-right: 10px;
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
         }
     }
 }
