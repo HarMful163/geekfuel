@@ -1,0 +1,90 @@
+.plan {
+    padding: 100px 0;
+    background-color: #F8F8F8;
+    &__title {
+        text-align: center;
+    }
+    &__subtitle {
+        text-align: center;
+        margin-top: 30px;
+        font-weight: 500;
+        span {
+            font-weight: 800;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 84px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    &__card {
+        background-color: #FFFFFF;
+        width: 387px;
+        margin: 0 auto;
+        padding: 40px 0 0 40px;
+    }
+    &__header {
+        font-family: 'FF DIN';
+        text-transform: uppercase;
+        line-height: 91%;
+    }
+    &__price {
+        margin-top: 20px;
+        display: flex;
+        &-sum {
+            margin-right: 8px;
+            font-size: 44.41px;
+            font-weight: 500;
+        }
+        &-month {
+            font-weight: 300;
+            align-self: flex-end;
+            opacity: 0.4;
+        }
+    }
+    &__img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    &__rate {
+        margin-top: 30px;
+        font-weight: 500;
+    }
+    &__advantage {
+        margin-top: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        &-yes {
+            position: relative;
+            margin-top: 8px;
+            padding-left: 24px;
+            @include ok;
+        }
+        &-no {
+            position: relative;
+            margin-top: 8px;
+            padding-left: 24px;
+            opacity: 0.3;
+            @include cross;
+        }
+    }
+    form {
+        text-align: center;
+        margin-top: 40px;
+    }
+    &__text {
+        margin: 0 auto;
+        font-weight: 300;
+        text-align: center;
+        width: 47%;
+        margin-top: 60px;
+        span {
+            font-weight: 500;
+            color: 000;
+            line-height: 26px;
+        }
+    }
+}

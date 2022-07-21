@@ -100,3 +100,41 @@
         background: url('../../icons/reasons/checkMark.svg');
     }
 }
+
+@mixin cross{
+    &::after {
+        content: '';
+        position: absolute;
+        top: 43%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 14px; 
+        height: 1px;
+        transform: rotate(-45deg);
+        background-color: $black-color;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 43%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 14px; 
+        height: 1px;
+        transform: rotate(45deg);
+        background-color: $black-color;
+    }
+}
+
+@mixin ok{
+    &::after {
+        content: '';
+        position: absolute;
+        top: 43%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 14px;
+        height: 10.5px;
+        background: url('../../icons/plan/ok.svg');
+    }
+}
